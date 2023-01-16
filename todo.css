@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+  }
+  
+  
+  .main{
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.178);
+    padding: 24px;
+    border-radius: 20px;
+  }
+  .main::-webkit-scrollbar{
+    width: 0 !important 
+  }
+
+.form-container{
+    font-size: 0px;
+    border-radius: 6px;
+    display: flex;
+}
+.input{
+    border: none;
+    font-size: 20px;
+    padding: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    flex:1;
+}
+.input:focus{
+    outline: none;
+}
+.btn-submit{
+    padding: 6px;
+    font-size: 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.Add-todo, .tasks{
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.todo-container, .ul-container, .item-container{
+    border-radius: 6px;
+}
+.todo-container{
+    margin-top: 24px;
+}
+.ul-container{
+    list-style:none;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    
+}
+.item{
+    margin-right: auto;
+    color: black;
+    width: 300px;
+    word-break: break-word;
+}
+.fa-solid{
+    color: black;
+    pointer-events: none;
+}
+.fa-solid.fa-pen-to-square, .fa-solid.fa-trash , .fa-solid.fa-check{
+  pointer-events: none;
+}
+
+.edit-btn, .check-btn, .trash-btn{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.check-btn, .trash-btn{
+  margin-left: 12px;
+}
+
+.checked{
+  background-color: rgba(184, 179, 179, 0.315) !important;
+}
+.line-through{
+  text-decoration: line-through;
+}
